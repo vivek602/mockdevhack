@@ -16,7 +16,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @CrossOrigin
 @RestController
 @EnableSwagger2
-@RequestMapping("bankING/api/v1/")
+@RequestMapping("13.233.208.167:9080/bankING/api/v1/")
 public class ProductController {
 
 	@Autowired
