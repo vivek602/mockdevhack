@@ -11,26 +11,26 @@ public class Product {
 
 	@Id
 	@GeneratedValue
-	private int id;
-	private String name;
+	private Long productId;
+	private String productName;
 	private String product_type;
 	private Long balance;
 	private Long max_limit;
 
-	public int getId() {
-		return id;
+	public Long getProductId() {
+		return productId;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setProductId(Long productId) {
+		this.productId = productId;
 	}
 
-	public String getName() {
-		return name;
+	public String getProductName() {
+		return productName;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setProductName(String productName) {
+		this.productName = productName;
 	}
 
 	public String getProduct_type() {
@@ -57,9 +57,9 @@ public class Product {
 		this.max_limit = max_limit;
 	}
 
-	public Product(int id) {
+	public Product(Long productId) {
 		super();
-		this.id = id;
+		this.productId = productId;
 	}
 
 	public Product() {
