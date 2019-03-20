@@ -17,7 +17,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @CrossOrigin
 @RestController
 @EnableSwagger2
-@RequestMapping("api/v1/")
+@RequestMapping("bankING/api/v1/")
 public class ProductGroupController {
 
 	@Autowired
