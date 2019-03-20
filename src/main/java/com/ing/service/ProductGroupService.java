@@ -8,7 +8,6 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.ing.domain.Product;
 import com.ing.domain.ProductGroup;
 import com.ing.repository.ProductGroupRepository;
 
@@ -24,8 +23,6 @@ public class ProductGroupService {
 		Iterable<ProductGroup> list = productGroupRepository.findAll();
 		for(ProductGroup productGroup:list) {
 			data.add(productGroup);
-			List<Product> productList=productGroup.getProductName();
-			System.out.println(productList);
 		}
 		return data;
 	}

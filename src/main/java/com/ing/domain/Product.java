@@ -62,4 +62,7 @@ public class Product {
 		this.id = id;
 	}
 
+	public Product() {
+		super();
+	}
 }
